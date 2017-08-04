@@ -1,0 +1,31 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/libs-snapshot' }
+  }
+  dependencies {
+    classpath "org.springframework.boot:spring-boot-gradle-plugin:${bootVer}"
+  }
+}
+
+subprojects {
+  repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/libs-snapshot' }
+  }
+
+  apply plugin: 'java'
+  apply plugin: 'org.springframework.boot'
+  apply plugin: 'io.spring.dependency-management'
+
+  dependencies {
+    compile "org.springframework.boot:spring-boot-starter"
+  }
+
+  if (bootVer =~ "^2\\.0\\.") {
+    bootJar.enabled = false
+  } else {
+    bootRepackage.enabled = false
+  }
+
+}

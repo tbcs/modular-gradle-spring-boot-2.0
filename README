@@ -1,0 +1,6 @@
+build and execution succeed:
+./gradlew --rerun-tasks -PbootVer=1.5.6.RELEASE clean build :main:bootRun
+
+build task (compileJava) fails:
+./gradlew --rerun-tasks -PbootVer=2.0.0.M3 clean build :main:bootRun
+./gradlew --rerun-tasks -PbootVer=2.0.0.BUILD-SNAPSHOT clean build :main:bootRun

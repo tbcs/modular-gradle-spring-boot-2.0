@@ -1,0 +1,4 @@
+dependencies {
+  compile project(":subsystem-a")
+  compile project(":subsystem-b")
+}

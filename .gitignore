@@ -1,0 +1,35 @@
+# Gradle
+/.gradle/
+/build/
+/modules/*/build/
+
+# generated source files
+/modules/*/generated/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+/modules/*/bin/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+/modules/*/out/
+
+# Netbeans
+.nb-gradle-properties
+.nb-gradle/
+
+# other build artifacts (e.g. embedded Cassandra)
+/target/
+/modules/*/target/
+
+# -----------------
+/main/build/
+/common/build/
+/subsystem-a/build/
+/subsystem-b/build/
+# -----------------

@@ -1,0 +1,6 @@
+include 'main'
+include 'common'
+include 'subsystem-a'
+include 'subsystem-b'
+
+rootProject.name = 'modular-gradle-spring-boot-2.0'
